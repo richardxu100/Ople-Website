@@ -1,16 +1,10 @@
 /* Inspiration https://www.geckoboard.com/ */
+html {
+  font-size: 16px; }
+
 body {
-  line-height: 1.5; }
-
-#navbar {
-  display: flex;
-  border: none; }
-  #navbar .item {
-    font-size: 16px; }
-
-#contact {
-  color: white;
-  margin: 4px; }
+  line-height: 1.5;
+  font-size: 62.5%; }
 
 #header_image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/lake.jpeg");
@@ -22,41 +16,49 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative; }
-
-h1.ui.header, h2.ui.header {
-  color: white;
-  font-size: 50px;
-  font-weight: 200;
-  text-align: center;
-  margin-top: 30vh;
-  position: relative; }
-  h1.ui.header span, h2.ui.header span {
-    color: #6BEC8A;
-    font-weight: 125 !important; }
-
-#catch_phrase {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.6); }
-
-#explore {
-  color: #6BEC8A !important;
-  margin-top: 30px; }
-
-#button_container {
-  text-align: center; }
-
-.ui.animated.button {
-  font-size: 18px; }
+  .masthead h1.ui.header, .masthead h2.ui.header {
+    position: relative;
+    top: 40vh;
+    text-align: center;
+    color: white;
+    font-size: 5.5em; }
+  .masthead #catch_phrase {
+    font-weight: 150;
+    margin-top: -0.25em;
+    font-size: 2em; }
+  .masthead .down_arrow {
+    height: 4em;
+    width: 4em;
+    border-radius: 2em;
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    margin: auto;
+    margin-top: 8em; }
 
 .info {
-  width: 100vw;
-  height: 400px;
-  background-color: #F2F2FE; }
+  height: 40em;
+  width: 100vw; }
+  .info h2.ui.header {
+    margin-top: 2em;
+    font-size: 4em; }
+  .info .ui.centered.grid {
+    max-width: 80vw;
+    margin: auto;
+    height: 100%; }
+    .info .ui.centered.grid h2.ui.header.logo_title {
+      margin-top: 0; }
+  .info p {
+    margin-top: 10px; }
 
-.ui.grid {
-  max-width: 80vw;
-  margin: 0; }
+p {
+  font-size: 1.6em; }
+
+.about.info {
+  background-color: #ecf0f1; }
+  .about.info h2.ui.centered.header {
+    padding-top: 2em;
+    font-size: 4em; }
 
 /*# sourceMappingURL=style.css.map */

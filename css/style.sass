@@ -1,24 +1,14 @@
 $brand_color: #6BEC8A
 /* Inspiration https://www.geckoboard.com/ */
+html
+	font-size: 16px
+
 body 
 	line-height: 1.5
-
-#navbar
-	display: flex
-	border: none
-
-	.item	
-		font-size: 16px
-
-#contact
-	// background-color: $brand-color
-	color: white
-	margin: 4px
+	font-size: 62.5% //1em is equal to 10px b/c of this trick
 
 #header_image 
 	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url('../public/lake.jpeg')
-	// -webkit-filter: grayscale(80%)
-	// filter: grayscale(80%)
 	height: 100%
 	width: 100%
 	background-size: cover
@@ -28,41 +18,57 @@ body
 	width: 100vw	
 	position: relative
 
-h1.ui.header, h2.ui.header
-	color: white
-	font-size: 50px
-	font-weight: 200
-	text-align: center
-	margin-top: 30vh
-	position: relative
+	h1.ui.header, h2.ui.header 
+		position: relative
+		top: 40vh
+		text-align: center
+		color: white
+		font-size: 5.5em
 
-	span
-		color: $brand-color
-		font-weight: 125 !important
+	#catch_phrase
+		font-weight: 150
+		margin-top: -.25em
+		font-size: 2em
 
-#catch_phrase
-	margin: 0
-	font-size: 32px
-	font-weight: 100
-	color: rgba(0,0,0,.6)
-
-#explore
-	color: $brand_color !important
-	margin-top: 30px
-
-#button_container 
-	text-align: center
-
-.ui.animated.button
-	font-size: 18px
+	.down_arrow
+		height: 4em
+		width: 4em
+		border-radius: 2em
+		border: 2px solid white
+		text-align: center
+		position: relative
+		top: 40vh
+		margin: auto
+		margin-top: 8em
 
 .info
+	height: 40em
 	width: 100vw
-	height: 400px
-	background-color: #F2F2FE
 
-.ui.grid 
-	max-width: 80vw
-	margin: 0
+	h2.ui.header 
+		margin-top: 2em
+		font-size: 4em
 
+	.ui.centered.grid 
+		max-width: 80vw
+		margin: auto
+		height: 100%
+
+		h2.ui.header.logo_title
+			margin-top: 0
+
+	p 
+		margin-top: 10px
+
+p
+	font-size: 1.6em
+
+.about.info
+	background-color: #ecf0f1
+
+	h2.ui.centered.header 
+		padding-top: 2em
+		font-size: 4em
+
+	
 
