@@ -1,76 +1,44 @@
-/* Inspiration https://www.geckoboard.com/ */
-html {
-  font-size: 16px; }
+/*
+Error: Invalid mixin "======".
+        on line 75 of style.sass
 
-body {
-  line-height: 1.5;
-  font-size: 62.5%; }
+70: 		padding-top: 2em
+71: 		font-size: 4em
+72: 
+73: <<<<<<< Updated upstream
+74: .ui.fluid.aboutus.image
+75: =======
+76: <<<<<<< HEAD
+77: .ui.fluid.about_us.image
+78: =======
+79: .ui.fluid.aboutus.image
+80: >>>>>>> origin/master
 
-#header_image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/lake.jpeg");
-  height: 100%;
-  width: 100%;
-  background-size: cover; }
-
-.masthead {
-  height: 100vh;
-  width: 100vw;
-  position: relative; }
-  .masthead h1.ui.header, .masthead h2.ui.header {
-    position: relative;
-    top: 40vh;
-    text-align: center;
-    color: white;
-    font-size: 5.5em; }
-  .masthead #catch_phrase {
-    font-weight: 150;
-    margin-top: -0.25em;
-    font-size: 2em; }
-  .masthead .down_arrow {
-    height: 4em;
-    width: 4em;
-    border-radius: 2em;
-    border: 2px solid white;
-    text-align: center;
-    position: relative;
-    top: 40vh;
-    margin: auto;
-    margin-top: 8em; }
-
-.info {
-  height: 40em;
-  width: 100vw; }
-  .info h2.ui.header {
-    margin-top: 2em;
-    font-size: 4em; }
-  .info .ui.centered.grid {
-    max-width: 80vw;
-    margin: auto;
-    height: 100%; }
-    .info .ui.centered.grid h2.ui.header.logo_title {
-      margin-top: 0; }
-  .info p {
-    margin-top: 10px; }
-
-p {
-  font-size: 1.6em;
-  line-height: 1.5; }
-
-.about.info {
-  background-color: #ecf0f1; }
-  .about.info h2.ui.centered.header {
-    padding-top: 2em;
-    font-size: 4em; }
-
-.ui.fluid.aboutus.image {
-  height: 10vw;
-  width: 10vw;
-  border-radius: 50%; }
-
-.ui.award.image {
-  display: inline-block;
-  height: 5vw;
-  width: 5vw;
-  border-radius: 50%; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.sass:75
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:1101:in `parse_mixin_definition'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:650:in `parse_line'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid mixin \"======\".\A         on line 75 of style.sass\A \A 70: 		padding-top: 2em\A 71: 		font-size: 4em\A 72: \A 73: <<<<<<< Updated upstream\A 74: .ui.fluid.aboutus.image\A 75: =======\A 76: <<<<<<< HEAD\A 77: .ui.fluid.about_us.image\A 78: =======\A 79: .ui.fluid.aboutus.image\A 80: >>>>>>> origin/master"; }
