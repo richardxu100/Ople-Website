@@ -60,6 +60,8 @@ p {
   .about.info h2.ui.centered.header {
     padding-top: 2em;
     font-size: 4em; }
+  .about.info .four.wide.column.award {
+    text-align: center; }
 
 .ui.fluid.aboutus.image {
   height: 10vw;
@@ -75,5 +77,8 @@ p {
 
 .description {
   margin-left: 1em; }
+
+.contact .message_input {
+  display: block !important; }
 
 /*# sourceMappingURL=style.css.map */
