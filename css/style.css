@@ -78,7 +78,14 @@ p {
 .description {
   margin-left: 1em; }
 
-.contact .message_input {
-  display: block !important; }
+.contact.info .ui.top.attached.centered.header {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 5em; }
+.contact.info #input_container {
+  margin: auto;
+  max-width: 50%; }
+  .contact.info #input_container .ui.transparent.input {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
