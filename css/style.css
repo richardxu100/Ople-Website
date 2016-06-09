@@ -40,7 +40,8 @@ body {
 .info {
   width: 100vw; }
   .info h2.ui.header {
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 0em;
     font-size: 4em; }
   .info .ui.centered.grid {
     margin: auto;
@@ -62,7 +63,7 @@ p {
 .about.info {
   background-color: #ecf0f1; }
   .about.info h2.ui.centered.header {
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 4em; }
   .about.info .ui.fluid.aboutus.image {
     max-width: 300px;
@@ -75,6 +76,8 @@ p {
   .about.info .description {
     margin-left: 1em;
     font-size: 16px; }
+  .about.info .last.row {
+    margin-bottom: 20px; }
 
 .ui.award.image {
   display: inline-block;
@@ -82,35 +85,40 @@ p {
   width: 5vw;
   border-radius: 50%; }
 
-.contact.info .ui.stacked.segment {
+.contact.info .ui.segment {
   max-width: 800px;
   margin: 0 auto;
   padding-top: 40px;
   margin-top: 100px;
-  margin-bottom: 50px; }
-  .contact.info .ui.stacked.segment h2.ui.header {
-    margin: 0em; }
-  .contact.info .ui.stacked.segment .ui.input {
+  margin-bottom: 50px;
+  background-color: #6BEC8A; }
+  .contact.info .ui.segment h2.ui.header {
+    margin: 0em;
+    font-size: 5em; }
+  .contact.info .ui.segment .ui.input {
     margin-top: 30px;
     margin-bottom: 0; }
-  .contact.info .ui.stacked.segment .eight.wide.column {
+  .contact.info .ui.segment .eight.wide.column {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    .contact.info .ui.stacked.segment .eight.wide.column input {
+    .contact.info .ui.segment .eight.wide.column input {
       font-size: 18px; }
-  .contact.info .ui.stacked.segment textarea {
+  .contact.info .ui.segment textarea {
     width: 100%;
     margin-top: 30px;
-    height: 200px;
+    height: 210px;
     border-radius: 4px;
     border: 1px solid rgba(34, 36, 38, 0.15);
     resize: none;
     float: right;
     font-size: 18px;
     padding: 10px; }
-  .contact.info .ui.stacked.segment button.ui.green.button {
+  .contact.info .ui.segment button.ui.button {
     margin-top: 30px;
-    margin-right: 0px; }
+    margin-right: 0px;
+    font-size: 20px;
+    background-color: white;
+    color: #6BEC8A; }
 
 /*# sourceMappingURL=style.css.map */
