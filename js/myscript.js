@@ -27,5 +27,17 @@ $(document).ready(function() {
 		$('html, body').animate({
 			scrollTop: $(".masthead").offset().top
 		}, 700);
-	})
+	});	
+	//Contact form variables
+	$('#send').click(function() {
+		var name, email, message;
+		name = $('#name').val();
+		email = $('#email').val();
+		message = $('#message').val();
+		$.post("../phpmail/mail.php", name, email, message);
+	});
+	
 });
+//Javascript
+
+
