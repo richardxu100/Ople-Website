@@ -18,13 +18,11 @@
 			<!-- Navigation -->
 			<div class="ui top fixed menu" id="navbar">
 				<div class="item"></div>
-			  <div class="item">
-					Ople Logo
-			  </div>
+		  	<a class="item" id="logo">Ople Logo</a>
 			  <div class="right menu">
-				  <a class="item">Products</a>
-				  <a class="item">About</a>
-				  <a class="item">
+				  <a class="item" id="products">Products</a>
+				  <a class="item" id="about">About</a>
+				  <a class="item" id="contact">
 			    	<button class="ui blue button" id="contact">Contact</button>
 				  </a>		  	
 			  </div>
@@ -42,11 +40,11 @@
 		</div><!-- end of header_image -->
 	</div><!-- end of Masthead -->
 	
-	<!-- Bumpshare Info -->
-	<div class="bumpshare info">
+	<!-- Products info-->
+	<div class="products info">
 		<div class="ui centered grid">
 			<h2 class="ui header">PRODUCTS</h2>
-			<div class="row">
+			<div class="row"> <!-- Symbiart section -->
 				<div class="five wide column">
 					<div class="ui raised segment">
 						<img class="ui fluid image" src="public/oplepics/SymbiArtLogo.png" alt="symbiart logo">
@@ -60,7 +58,23 @@
 						<button class="ui button"><i class="expand icon"></i> Explore All</button>
 					</div>
 				</div>
-			</div>
+			</div> <!-- end of Symbiart section -->
+
+			<div class="row" id="bumpshare"> <!-- Bumpshare section -->				
+				<div class="eleven wide column">
+					<h2 class="ui header logo_title">Bumpshare</h2>
+					<div class="segment">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quas consequatur voluptate dolorum. Nam autem voluptates incidunt nisi, dignissimos itaque accusantium. Officia beatae, amet. Animi nostrum inventore vitae mollitia, doloribus!</p>
+						<button class="ui button"><i class="android icon"></i>Download</button>
+						<button class="ui button"><i class="expand icon"></i> Explore All</button>
+					</div>
+				</div>		
+				<div class="five wide column">
+					<div class="ui raised segment">
+						<img class="ui fluid image" src="public/oplepics/bumpsharelarge.png" alt="bumpshare logo">
+					</div>
+				</div>					
+			</div> <!-- end of Bumpshare section -->					
 		</div>
 	</div><!-- end of Bumpshare Info -->
 
@@ -103,33 +117,32 @@
 
 	<!-- Contact section -->
 	<div class="contact info">
-			<h4 class="ui top attached centered header">Contact</h4>
-			<div class="ui attached stacked segment" id="input_container">
-				<div class="ui relaxed grid">
-					<div class="row">
-						<div class="eight wide column">
-							<div class="ui transparent input">
-							  <input type="text" placeholder="Name">
-							</div>
-							<div class="ui divider"></div>
-							<div class="ui transparent input">
-							  <input type="text" placeholder="E-mail">
-							</div>						
-							<div class="ui divider"></div>
-							<button class="ui basic button">Submit</button>	
-						</div>
-						<div class="ui vertical divider"></div>
-						<div class="eight wide column">
-							<div class="ui transparent input">
-							  <input type="text" placeholder="Message">
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+		<div class="ui stacked raised segment">
+		  <div class="ui centered grid">
+		    <h2 class="ui header">Contact Us!</h2>
+		    <div class="row">
+		      <div class="eight wide column">
+		        <div class="ui fluid input">
+		          <input type="text" placeholder="Name" id="club_name">
+		        </div>
+		        <div class="ui fluid input">
+		          <input type="text" placeholder="Email" id="email">
+		        </div>
+		        <button class="ui green fluid button">SEND</button>
+		      </div>
+		      <div class="eight wide column">
+		        <div class="form">
+		          <div class="field">
+		            <textarea placeholder="Description" rows="8" id="club_desc"></textarea>
+		          </div>      
+		        </div>  
+		      </div>
+		    </div>
+		  </div>
+		</div> <!-- end of contact form -->
+	</div> <!-- end of contact info -->
+
+<!-- Footer, we should add a footer -->
 
 	<!-- Jquery -->
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>

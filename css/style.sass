@@ -43,7 +43,7 @@ body
 
 .info
 	width: 100vw
-
+	
 	h2.ui.header 
 		margin-top: 2em
 		font-size: 4em
@@ -62,6 +62,10 @@ body
 p
 	font-size: 1.6em
 	line-height: 1.5
+
+#bumpshare
+	margin-top: 5em
+	// background-color: #ecf0f1	
 	
 .about.info
 	background-color: #ecf0f1
@@ -89,14 +93,40 @@ p
 	margin-left: 1em
 
 .contact.info
-	.ui.top.attached.centered.header
-		max-width: 50%
-		margin: auto
-		margin-top: 5em
+			
+	.ui.stacked.segment
+		max-width: 800px
+		margin: 0 auto
+		padding-top: 40px
+		margin-top: 100px
+		margin-bottom: 50px
 		
-	#input_container
-		margin: auto
-		max-width: 50%
+		h2.ui.header
+			margin-top: 0.8em
 
-		.ui.transparent.input 
-			display: block
+		.ui.input
+			margin-top: 30px
+			margin-bottom: 0
+
+		.eight.wide.column
+			display: flex
+			flex-direction: column
+			justify-content: center
+
+			input
+				font-size: 18px
+
+		textarea
+			width: 100%
+			margin-top: 30px
+			height: 200px
+			border-radius: 4px
+			border: 1px solid rgba(34,36,38,.15)
+			resize: none
+			float: right
+			font-size: 18px
+			padding: 10px
+
+		button.ui.green.button
+			margin-top: 30px
+			margin-right: 0px
