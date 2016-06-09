@@ -43,10 +43,11 @@ body {
     margin-top: 2em;
     font-size: 4em; }
   .info .ui.centered.grid {
-    max-width: 80vw;
     margin: auto;
     height: 100%; }
-    .info .ui.centered.grid h2.ui.header.logo_title {
+  .info #products_grid {
+    max-width: 1000px; }
+    .info #products_grid h2.ui.header.logo_title {
       margin-top: 0; }
   .info p {
     margin-top: 10px; }
@@ -66,9 +67,9 @@ p {
   .about.info .four.wide.column.award {
     text-align: center; }
 
-.ui.fluid.aboutus.image {
-  height: 10vw;
-  width: 10vw;
+.ui.fixed.aboutus.image {
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   margin-top: -2em; }
 
