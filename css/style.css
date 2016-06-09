@@ -64,23 +64,23 @@ p {
   .about.info h2.ui.centered.header {
     padding-top: 2em;
     font-size: 4em; }
+  .about.info .ui.fluid.aboutus.image {
+    max-width: 300px;
+    border-radius: 50%;
+    float: right; }
   .about.info .four.wide.column.award {
     text-align: center; }
-
-.ui.fixed.aboutus.image {
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  margin-top: -2em; }
+  .about.info #awards {
+    margin-top: 0em; }
+  .about.info .description {
+    margin-left: 1em;
+    font-size: 16px; }
 
 .ui.award.image {
   display: inline-block;
   height: 5vw;
   width: 5vw;
   border-radius: 50%; }
-
-.description {
-  margin-left: 1em; }
 
 .contact.info .ui.stacked.segment {
   max-width: 800px;
@@ -89,7 +89,7 @@ p {
   margin-top: 100px;
   margin-bottom: 50px; }
   .contact.info .ui.stacked.segment h2.ui.header {
-    margin-top: 0.8em; }
+    margin: 0em; }
   .contact.info .ui.stacked.segment .ui.input {
     margin-top: 30px;
     margin-bottom: 0; }
