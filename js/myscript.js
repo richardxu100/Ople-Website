@@ -34,7 +34,7 @@ $(document).ready(function() {
 		name = $('#name').val();
 		email = $('#email').val();
 		message = $('#message').val();
-		$.post("../phpmail/mail.php", name, email, message);
+		$.post('../phpmail/mail.php', {name: name});
 	});
 	
 });

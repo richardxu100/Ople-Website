@@ -18,7 +18,7 @@ $mail->SMTPDebug = 2;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp.thing.com';
 // use
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
@@ -29,15 +29,15 @@ $mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "junkwolginmark@gmail.com";
+$mail->Username = "username";
 //Password to use for SMTP authentication
-$mail->Password = "sw663466";
+$mail->Password = "password";
 //Set who the message is to be sent from
-$mail->setFrom('junkwolginmark@gmail.com', 'Mark Wolgin');
+$mail->setFrom('email from', 'Mark Wolgin');
 //Set an alternative reply-to address
 $mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress('wolginmark@gmail.com', 'Mark Wolgin');
+$mail->addAddress('email to send to', 'Mark Wolgin');
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
 //Read an HTML message body from an external file, convert referenced images to embedded,
