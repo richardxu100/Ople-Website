@@ -46,8 +46,6 @@ body {
   .info h2.ui.header {
     margin-top: 2em;
     font-size: 4em; }
-  .info h2.ui.section {
-    color: black; }
   .info .ui.centered.grid {
     margin: auto;
     height: 100%; }
@@ -72,7 +70,6 @@ p {
   .about.info i.fa.fa-info-circle {
     margin-right: 0.2em; }
   .about.info h2.ui.centered.header {
-    padding-top: 2em;
     font-size: 4em; }
   .about.info .four.wide.column.award {
     text-align: center; }
