@@ -1,0 +1,152 @@
+/* Inspiration https://www.geckoboard.com/ */
+html {
+  font-size: 16px; }
+
+body {
+  line-height: 1.5;
+  font-size: 62.5%; }
+
+#navbar {
+  transition: 600ms ease; }
+
+#header_image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/lake.jpeg");
+  height: 100%;
+  width: 100%;
+  background-size: cover; }
+
+.masthead {
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+  .masthead h1.ui.header, .masthead h2.ui.header {
+    position: relative;
+    top: 40vh;
+    text-align: center;
+    color: white;
+    font-size: 5.5em; }
+  .masthead #catch_phrase {
+    font-weight: 150;
+    margin-top: -0.25em;
+    font-size: 2em;
+    font-style: italic; }
+  .masthead .down_arrow {
+    height: 4em;
+    width: 4em;
+    border-radius: 2em;
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    margin: auto;
+    margin-top: 8em; }
+
+.info {
+  width: 100vw; }
+  .info h2.ui.header {
+    margin-top: 2em;
+    font-size: 4em; }
+  .info h2.ui.section {
+    color: black; }
+  .info .ui.centered.grid {
+    margin: auto;
+    height: 100%; }
+  .info #products_grid {
+    max-width: 1000px; }
+    .info #products_grid h2.ui.header.logo_title {
+      margin-top: 0;
+      font-size: 3em; }
+
+p {
+  font-size: 1.6em;
+  line-height: 1.5; }
+
+.products.info {
+  padding-bottom: 3em; }
+
+#bumpshare {
+  margin-top: 5em; }
+
+.about.info {
+  background-color: #ecf0f1; }
+  .about.info i.fa.fa-info-circle {
+    margin-right: 0.2em; }
+  .about.info h2.ui.centered.header {
+    padding-top: 2em;
+    font-size: 4em; }
+  .about.info .four.wide.column.award {
+    text-align: center; }
+
+img.ui.tiny.image {
+  display: inline-block; }
+
+.ui.fixed.aboutus.image {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  margin-top: -2em; }
+
+#quote {
+  font-size: 3em;
+  margin-top: 0; }
+
+.description {
+  margin-left: 1em; }
+
+h3.horizontal.divider {
+  margin-top: 3em; }
+
+h2.ui.icon.header {
+  font-size: 2em; }
+
+.contact.info .ui.stacked.segment {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+  margin-top: 100px;
+  margin-bottom: 50px; }
+  .contact.info .ui.stacked.segment h2.ui.header {
+    margin-top: 0.4em; }
+  .contact.info .ui.stacked.segment .ui.input {
+    margin-top: 30px;
+    margin-bottom: 0; }
+  .contact.info .ui.stacked.segment .eight.wide.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contact.info .ui.stacked.segment .eight.wide.column input {
+      font-size: 18px; }
+  .contact.info .ui.stacked.segment textarea {
+    width: 100%;
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 4px;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    resize: none;
+    float: right;
+    font-size: 18px;
+    padding: 10px; }
+  .contact.info .ui.stacked.segment button.ui.green.button {
+    margin-top: 30px;
+    margin-right: 0px; }
+  .contact.info .ui.stacked.segment p {
+    margin-bottom: 0px; }
+
+.description {
+  font-size: 1.2em;
+  margin-top: 0.4em;
+  margin-bottom: 1.5em; }
+
+footer {
+  width: 100vw;
+  height: 5em;
+  background-color: #343235;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: flex-end; }
+  footer p {
+    font-size: 1em;
+    margin-left: 2em; }
+
+/*# sourceMappingURL=style.css.map */
