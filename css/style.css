@@ -105,7 +105,7 @@ h2.ui.icon.header {
   margin-top: 100px;
   margin-bottom: 50px; }
   .contact.info .ui.stacked.segment h2.ui.header {
-    margin-top: 0.8em; }
+    margin-top: 0.4em; }
   .contact.info .ui.stacked.segment .ui.input {
     margin-top: 30px;
     margin-bottom: 0; }
@@ -128,6 +128,8 @@ h2.ui.icon.header {
   .contact.info .ui.stacked.segment button.ui.green.button {
     margin-top: 30px;
     margin-right: 0px; }
+  .contact.info .ui.stacked.segment p {
+    margin-bottom: 0px; }
 
 .description {
   font-size: 1.2em;
