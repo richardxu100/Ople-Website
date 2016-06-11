@@ -54,7 +54,8 @@ body {
   .info #products_grid {
     max-width: 1000px; }
     .info #products_grid h2.ui.header.logo_title {
-      margin-top: 0; }
+      margin-top: 0;
+      font-size: 3em; }
 
 p {
   font-size: 1.6em;
