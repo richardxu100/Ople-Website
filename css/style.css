@@ -76,7 +76,7 @@ p {
   .about.info .four.wide.column.award {
     text-align: center; }
 
-img.ui.tiny.circular.image {
+img.ui.tiny.image {
   display: inline-block; }
 
 .ui.fixed.aboutus.image {
@@ -128,6 +128,11 @@ h2.ui.icon.header {
   .contact.info .ui.stacked.segment button.ui.green.button {
     margin-top: 30px;
     margin-right: 0px; }
+
+.description {
+  font-size: 1.2em;
+  margin-top: 0.4em;
+  margin-bottom: 1.5em; }
 
 footer {
   width: 100vw;
