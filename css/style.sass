@@ -1,4 +1,6 @@
 $brand_color: #6BEC8A
+$logo_color: #182ad5
+$gray: #ecf0f1
 /* Inspiration https://www.geckoboard.com/ */
 html
 	font-size: 16px
@@ -6,6 +8,9 @@ html
 body 
 	line-height: 1.5
 	font-size: 62.5% //1em is equal to 10px b/c of this trick
+
+#navbar 
+	transition: 600ms ease
 
 #header_image 
 	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url('../public/lake.jpeg')
@@ -29,6 +34,10 @@ body
 		font-weight: 150
 		margin-top: -.25em
 		font-size: 2em
+		font-style: italic
+
+		span 
+			// color: $brand_color
 
 	.down_arrow
 		height: 4em
@@ -46,6 +55,10 @@ body
 	h2.ui.header 
 		margin-top: 2em
 		font-size: 4em
+		// color: #535357
+
+	h2.ui.section
+		color: black	
 
 	.ui.centered.grid
 		margin: auto 
@@ -57,19 +70,25 @@ body
 		h2.ui.header.logo_title
 			margin-top: 0
 
-	p 
-		margin-top: 10px
+	// p 
+	// 	margin-top: 10px
 
 p
 	font-size: 1.6em
 	line-height: 1.5
+
+.products.info
+	padding-bottom: 3em
 
 #bumpshare
 	margin-top: 5em
 	// background-color: #ecf0f1	
 	
 .about.info
-	background-color: #ecf0f1
+	background-color: $gray
+
+	i.fa.fa-info-circle
+		margin-right: .2em
 
 	h2.ui.centered.header 
 		padding-top: 2em
@@ -77,21 +96,29 @@ p
 
 	.four.wide.column.award
 		text-align: center
+	
+img.ui.tiny.circular.image 
+	display: inline-block
 
 .ui.fixed.aboutus.image
 	height: 500px
 	width: 500px
 	border-radius: 50%
 	margin-top: -2em
-	
-.ui.award.image
-	display: inline-block
-	height: 5vw
-	width: 5vw
-	border-radius: 50%
+
+#quote
+	font-size: 3em
+	margin-top: 0
 	
 .description
 	margin-left: 1em
+
+h3.horizontal.divider 
+	margin-top: 3em	
+
+h2.ui.icon.header
+	font-size: 2em
+	
 
 .contact.info
 			
@@ -131,3 +158,16 @@ p
 		button.ui.green.button
 			margin-top: 30px
 			margin-right: 0px
+
+footer 
+	width: 100vw
+	height: 5em
+	background-color: #343235
+	color: white 
+	display: flex 
+	align-items: center 
+	flex-direction: flex-end
+	
+	p 
+		font-size: 1em
+		margin-left: 2em
