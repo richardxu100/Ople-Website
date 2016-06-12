@@ -156,4 +156,8 @@ footer {
 .ui.modal p {
   font-size: 1.2em; }
 
+@media (max-width: 400px) {
+  h1 {
+    font-color: red; } }
+
 /*# sourceMappingURL=style.css.map */
