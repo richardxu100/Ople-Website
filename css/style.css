@@ -41,17 +41,19 @@ body {
     margin: auto;
     margin-top: 8em; }
 
-.info h2.ui.header {
-  margin-top: 2em;
-  font-size: 4em; }
-.info .ui.centered.grid {
-  margin: auto;
-  height: 100%; }
-.info #products_grid {
-  max-width: 1000px; }
-  .info #products_grid h2.ui.header.logo_title {
-    margin-top: 0;
-    font-size: 3em; }
+.info {
+  width: 100vw; }
+  .info h2.ui.header {
+    margin-top: 2em;
+    font-size: 4em; }
+  .info .ui.centered.grid {
+    margin: auto;
+    height: 100%; }
+  .info #products_grid {
+    max-width: 1000px; }
+    .info #products_grid h2.ui.header.logo_title {
+      margin-top: 0;
+      font-size: 3em; }
 
 p {
   font-size: 1.6em;
@@ -71,7 +73,6 @@ p {
   .about.info i.fa.fa-info-circle {
     margin-right: 0.2em; }
   .about.info h2.ui.section.centered.header {
-    padding-top: 2em;
     font-size: 4em; }
   .about.info .four.wide.column.award {
     text-align: center; }
@@ -155,8 +156,8 @@ footer {
 .ui.modal p {
   font-size: 1.2em; }
 
-@media (max-width: 400px) {
-  h1 {
-    font-color: red; } }
+@media (min-width: 768px) {
+  .right.menu {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
