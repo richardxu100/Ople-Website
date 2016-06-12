@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Ople Website</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">	
@@ -14,15 +14,14 @@
 	<!-- Masthead -->
 	<div class="masthead">
 		<div id="header_image">
-
 			<!-- Navigation -->
-			<div class="ui stackable top fixed menu" id="navbar">
+			<div class="ui top stackable fixed menu" id="navbar">
 				<div class="ui container">
 		  		<a class="item" id="logo">
 						<img src="public/logo.svg" alt="Ople Logo">		  		
 		  		</a>
 				  <div class="right menu">
-					  <a class="item" id="products">Products</a>
+				  	<a class="item" id="products">Products</a>
 					  <a class="item" id="about">About</a>
 					  <a class="item" id="contact">
 				    	<button class="ui blue button" id="contact">Contact</button>
@@ -64,7 +63,7 @@
 				</div>
 				<div class="eleven wide column">
 					<h2 class="ui header logo_title">
-						<div class="content">symbiArt</div>
+						<div class="content">symbi<span>Art</span></div>
 						<div class="sub header">Make art together.</div>
 					</h2>
 					<div class="segment">
@@ -74,10 +73,11 @@
 				</div>
 			</div> <!-- end of Symbiart section -->
 
-			<div class="row" id="bumpshare"> <!-- Bumpshare section -->				
-				<div class="eleven wide column">
+			<div class="row" id="bumpshare"> <!-- Bumpshare section -->		
+				<!-- How it looks on Desktop -->		
+				<div class="eleven wide column" id="desktop_bumpshare">
 					<h2 class="ui header logo_title">
-						<div class="content">bumpShare</div>
+						<div class="content">bump<span>Share</span></div>
 						<div class="sub header">A revolutionary new way to meet new people.</div></h2>
 					<div class="segment">
 						<p>Gone are the days of wasting precious time exchanging contact information. bumpShare exchanges social media information between two phones with a single bump. Bump Together!!</p>
@@ -88,7 +88,17 @@
 					<div class="ui piled raised segment">
 						<img class="ui fluid image" src="public/oplepics/bumpsharelarge.png" alt="bumpshare logo">
 					</div>
-				</div>					
+				</div>
+				<!-- How it looks on Mobile -->
+				<div class="eleven wide column" id="mobile_bumpshare">
+					<h2 class="ui header logo_title">
+						<div class="content">bump<span>Share</span></div>
+						<div class="sub header">A revolutionary new way to meet new people.</div></h2>
+					<div class="segment">
+						<p>Gone are the days of wasting precious time exchanging contact information. bumpShare exchanges social media information between two phones with a single bump. Bump Together!!</p>
+						<a href="https://play.google.com/store/apps/details?id=com.conestogacomputerscienceclub.bumpshare&hl=en" target="_blank"><button class="ui button"><i class="android icon"></i>Download</button></a>
+					</div>
+				</div>										
 			</div> <!-- end of Bumpshare section -->					
 			<div class="row"> <!-- picChat section -->
 			<div class="five wide column">
@@ -98,7 +108,7 @@
 			</div>
 			<div class="eleven wide column">
 				<h2 class="ui header logo_title">
-					<div class="content">picChat</div>
+					<div class="content">pic<span>Chat</span></div>
 					<div class="sub header">Meaningful and intimate social media.</div>
 				</h2>
 				<div class="segment">
@@ -127,7 +137,6 @@
 Services</h3>
 		</div>
 		
-
 		<!-- Services section -->
 	<div class="ui stackable centered grid">
 	  <div class="three column wide row">
@@ -166,7 +175,7 @@ Services</h3>
 	<div class="contact info">
 		<div class="ui stacked raised segment">
 		  <div class="ui stackable centered grid container">
-		    <h2 class="ui header">Contact Us</h2>
+		    <h2 class="ui section header">Contact Us</h2>
 				<p>We're a team of developers ready to help with any of your mobile or web development needs!</p>
 		    <div class="row">
 		      <div class="eight wide column">
@@ -176,7 +185,7 @@ Services</h3>
 		        <div class="ui fluid input">
 		          <input type="text" placeholder="Email" id="email">
 		        </div>
-		        <button class="ui green fluid button" id="send">SEND</button>
+		        <button class="ui green fluid button" id="desktop_send">SEND</button>
 		      </div>
 		      <div class="eight wide column">
 		        <div class="form">
@@ -185,11 +194,13 @@ Services</h3>
 		          </div>      
 		        </div>  
 		      </div>
+		      <button class="ui green fluid button" id="mobile_send">SEND</button>
 		    </div>
 		  </div>
 		</div> <!-- end of contact form -->
 	</div> <!-- end of contact info -->
 
+	<!-- Awards Section -->
 	<h3 class="ui horizontal divider header"><i class="trophy icon"></i>Awards</h3>
   	<div class="ui center aligned grid">
     	<div class="three column row">
@@ -206,12 +217,12 @@ Services</h3>
 </div>
 </div>
 
-<!-- Footer, we should add a footer -->
+<!-- Footer Section-->
 	<footer>
 		<p>Developed by Ople &copy;</p>
 	</footer>
 
-<!-- Modal -->
+<!-- Modal for Send Button-->
 <div class="ui modal">
   <div class="header">Thank you for reaching out to us!</div>
   <div class="content">

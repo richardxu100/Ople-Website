@@ -4,18 +4,21 @@ $gray: #ecf0f1
 /* Inspiration https://www.geckoboard.com/ */
 html
 	font-size: 16px
+	margin: 0
+
 
 body 
 	line-height: 1.5
 	font-size: 62.5% //1em is equal to 10px b/c of this trick
+	height: 100%
 
 #navbar 
 	transition: 600ms ease
 
 #header_image 
 	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url('../public/lake.jpeg')
-	height: 100%
-	width: 100%
+	height: 100vh
+	width: 100vw
 	background-size: cover
 
 .masthead
@@ -25,10 +28,11 @@ body
 
 	h1.ui.header, h2.ui.header 
 		position: relative
-		top: 40vh
+		top: 38vh
 		text-align: center
 		color: white
 		font-size: 5.5em
+		font-weight: 200
 
 	#catch_phrase
 		font-weight: 150
@@ -37,7 +41,7 @@ body
 		font-style: italic
 
 		span 
-			// color: $brand_color
+			font-weight: bold 
 
 	.down_arrow
 		height: 4em
@@ -46,16 +50,19 @@ body
 		border: 2px solid white
 		text-align: center
 		position: relative
-		top: 40vh
+		top: 32vh
 		margin: auto
 		margin-top: 8em
 
 .info
-	// width: 100vw
+	
+	h2.ui.section.header 
+		font-weight: 600
+
 	h2.ui.header 
 		margin-top: 2em
 		font-size: 4em
-		// color: #535357
+		font-weight: 500
 
 	.ui.centered.grid
 		margin: auto 
@@ -67,7 +74,9 @@ body
 		h2.ui.header.logo_title
 			margin-top: 0
 			font-size: 3em
-
+		
+			span 
+				font-weight: bold
 	// p 
 	// 	margin-top: 10px
 
@@ -82,6 +91,9 @@ p
 	margin-top: 5em
 	// background-color: #ecf0f1	
 	
+#mobile_bumpshare
+	display: none	
+
 .ui.centered.grid 
 	max-width: 1400px
 
@@ -165,6 +177,9 @@ h2.ui.icon.header
 		p
 			margin-bottom: 0px
 
+#mobile_send
+	display: none
+
 .description
 	font-size: 1.2em
 	margin-top: .4em
@@ -187,6 +202,23 @@ footer
 	p 
 		font-size: 1.2em
 
-@media (max-width:400px)
-	h1
-		font-color: red 
+@media screen and (max-width: 600px)
+	#navbar
+		div.right.menu
+			display: none
+	
+	#mobile_bumpshare
+		display: inline-block
+		margin-top: -20px
+
+	#desktop_bumpshare
+		display: none		
+
+	#mobile_send
+		display: block 
+
+	#desktop_send
+		display: none			
+
+	#message
+		margin-top: -5px

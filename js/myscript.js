@@ -52,9 +52,17 @@ $(document).ready(function() {
 	  }
 	});	
 	//Modal
-	$('#send').click(function() {
+	$('.ui.green.fluid.button').click(function() {
 		$('.ui.modal').modal('setting', 'Fade', 300).modal('show');
 	});
+	//Media Queries
+	// $(window).resize(function(){     
+ //   	if ($(window).width() == 320 ) {
+ //   		$('#navbar').hide();
+ //     }
+	// });
+
+
 });
 //Javascript
 
