@@ -114,6 +114,12 @@ h2.ui.icon.header {
 #web_dev {
   text-align: center; }
 
+.content {
+  font-weight: bold; }
+
+i {
+  font-weight: bold; }
+
 .contact.info .ui.stacked.segment {
   max-width: 800px;
   margin: 0 auto;
