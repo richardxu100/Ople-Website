@@ -1,22 +1,27 @@
 /*
-Error: The line was indented 2 levels deeper than the previous line.
-        on line 99 of style.sass
+Error: Invalid mixin "======".
+        on line 64 of style.sass
 
-94: 	i.fa.fa-info-circle
-95: 		margin-right: .2em
-96: 
-97: 	h2.ui.centered.header 
-98: <<<<<<< HEAD
-99: 		padding-top: 2em
-100: =======
-101: >>>>>>> master
-102: 		font-size: 4em
-103: 
-104: 	.four.wide.column.award
+59: 
+60: <<<<<<< HEAD
+61: 	h2.ui.section
+62: 		color: black	
+63: 
+64: =======
+65: >>>>>>> master
+66: 	.ui.centered.grid
+67: 		margin: auto 
+68: 		height: 100%
+69: 
 
 Backtrace:
-style.sass:99
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:520:in `tree'
+style.sass:64
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:1101:in `parse_mixin_definition'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:650:in `parse_line'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:536:in `build_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:555:in `block in append_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:554:in `append_children'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
@@ -36,4 +41,4 @@ style.sass:99
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: The line was indented 2 levels deeper than the previous line.\A         on line 99 of style.sass\A \A 94: 	i.fa.fa-info-circle\A 95: 		margin-right: .2em\A 96: \A 97: 	h2.ui.centered.header \A 98: <<<<<<< HEAD\A 99: 		padding-top: 2em\A 100: =======\A 101: >>>>>>> master\A 102: 		font-size: 4em\A 103: \A 104: 	.four.wide.column.award"; }
+  content: "Error: Invalid mixin \"======\".\A         on line 64 of style.sass\A \A 59: \A 60: <<<<<<< HEAD\A 61: 	h2.ui.section\A 62: 		color: black	\A 63: \A 64: =======\A 65: >>>>>>> master\A 66: 	.ui.centered.grid\A 67: 		margin: auto \A 68: 		height: 100%\A 69: "; }
