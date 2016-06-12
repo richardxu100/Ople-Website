@@ -51,6 +51,10 @@ $(document).ready(function() {
 	    $('#navbar').removeClass('large inverted');
 	  }
 	});	
+	//Modal
+	$('#send').click(function() {
+		$('.ui.modal').modal('setting', 'Fade', 300).modal('show');
+	});
 });
 //Javascript
 
