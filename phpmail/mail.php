@@ -18,18 +18,18 @@ $mail->SMTPDebug = 2;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host = 'smtp.thing.com';
+$mail->Host = 'a2plcpnl0643.prod.iad2.secureserver.net';
 // use
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+$mail->Port = 465;
 //Set the encryption system to use - ssl (deprecated) or tls
 $mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "username";
+$mail->Username = "contact@ople.io";
 //Password to use for SMTP authentication
 $mail->Password = "password";
 //Set who the message is to be sent from
@@ -53,3 +53,4 @@ if (!$mail->send()) {
 } else {
     echo "Message sent!";
 }
+?>
