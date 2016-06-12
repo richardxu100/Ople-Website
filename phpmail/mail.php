@@ -53,4 +53,7 @@ if (!$mail->send()) {
 } else {
     echo "Message sent!";
 }
+<<<<<<< HEAD
 ?>
+=======
+>>>>>>> refs/remotes/origin/master
