@@ -94,7 +94,8 @@ img.ui.tiny.image {
   margin-left: 1em; }
 
 h3.horizontal.divider {
-  margin-top: 3em; }
+  margin-top: 3.5em;
+  margin-bottom: 2.5em; }
 
 h2.ui.icon.header {
   font-size: 2em; }
