@@ -47,7 +47,8 @@ body {
     margin-top: 8em; }
 
 .info h2.ui.section.header {
-  font-weight: 600; }
+  font-weight: 600;
+  margin-top: 1em; }
 .info h2.ui.header {
   margin-top: 2em;
   font-size: 4em;
@@ -101,9 +102,6 @@ img.ui.tiny.image {
   font-size: 3em;
   margin-top: 0; }
 
-.description {
-  margin-left: 1em; }
-
 h3.horizontal.divider {
   margin-top: 3.5em;
   margin-bottom: 2.5em; }
@@ -120,46 +118,30 @@ h2.ui.icon.header {
 i {
   font-weight: bold; }
 
-.contact.info .ui.stacked.segment {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 40px;
-  margin-top: 100px;
-  margin-bottom: 50px; }
-  .contact.info .ui.stacked.segment h2.ui.header {
-    margin-top: 0.4em; }
-  .contact.info .ui.stacked.segment .ui.input {
-    margin-top: 30px;
-    margin-bottom: 0; }
-  .contact.info .ui.stacked.segment .eight.wide.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .contact.info .ui.stacked.segment .eight.wide.column input {
-      font-size: 18px; }
-  .contact.info .ui.stacked.segment textarea {
-    width: 100%;
-    margin-top: 30px;
-    height: 200px;
-    border-radius: 4px;
-    border: 1px solid rgba(34, 36, 38, 0.15);
+.contact.info .ui.stacked.raised.segment {
+  max-width: 700px;
+  margin: 40px auto;
+  margin-top: 10em; }
+  .contact.info .ui.stacked.raised.segment input {
+    margin-top: 0.5em; }
+  .contact.info .ui.stacked.raised.segment textarea {
     resize: none;
-    float: right;
-    font-size: 18px;
-    padding: 10px; }
-  .contact.info .ui.stacked.segment button.ui.green.button {
-    margin-top: 30px;
-    margin-right: 0px; }
-  .contact.info .ui.stacked.segment p {
-    margin-bottom: 0px; }
+    margin-top: 0.5em; }
+  .contact.info .ui.stacked.raised.segment p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6); }
+  .contact.info .ui.stacked.raised.segment .ui.green.fluid.button {
+    margin-top: 20px; }
 
 #mobile_send {
   display: none; }
 
 .description {
   font-size: 1.2em;
+  font-weight: bold;
   margin-top: 0.4em;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  margin-left: 1em; }
 
 footer {
   width: 100vw;
@@ -170,8 +152,10 @@ footer {
   align-items: center;
   flex-direction: flex-end; }
   footer p {
-    font-size: 1em;
+    font-size: 1.2em;
     margin-left: 2em; }
+  footer span {
+    margin-left: 20px; }
 
 .ui.modal p {
   font-size: 1.2em; }

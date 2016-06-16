@@ -69,7 +69,7 @@
 					</h2>
 					<div class="segment">
 						<p>(Coming Soon) Individuals are able to team up with a friend or a stranger to create art - either a story, a sketch, or a tune. One mind is great, but two minds are better than one!</p>
-						<button class="ui button"><i class="android icon"></i>Download</button>
+						<button class="green ui button"><i class="android icon"></i>Download</button>
 					</div>
 				</div>
 			</div> <!-- end of Symbiart section -->
@@ -82,7 +82,7 @@
 						<div class="sub header">A revolutionary new way to meet new people.</div></h2>
 					<div class="segment">
 						<p>Gone are the days of wasting precious time exchanging contact information. bumpShare exchanges social media information between two phones with a single bump. Bump Together!!</p>
-						<a href="https://play.google.com/store/apps/details?id=com.conestogacomputerscienceclub.bumpshare&hl=en" target="_blank"><button class="ui button"><i class="android icon"></i>Download</button></a>
+						<a href="https://play.google.com/store/apps/details?id=com.conestogacomputerscienceclub.bumpshare&hl=en" target="_blank"><button class="ui green button"><i class="android icon"></i>Download</button></a>
 					</div>
 				</div>		
 				<div class="five wide column">
@@ -97,7 +97,7 @@
 						<div class="sub header">A revolutionary new way to meet new people.</div></h2>
 					<div class="segment">
 						<p>Gone are the days of wasting precious time exchanging contact information. bumpShare exchanges social media information between two phones with a single bump. Bump Together!!</p>
-						<a href="https://play.google.com/store/apps/details?id=com.conestogacomputerscienceclub.bumpshare&hl=en" target="_blank"><button class="ui button"><i class="android icon"></i>Download</button></a>
+						<a href="https://play.google.com/store/apps/details?id=com.conestogacomputerscienceclub.bumpshare&hl=en" target="_blank"><button class="ui green button"><i class="android icon"></i>Download</button></a>
 					</div>
 				</div>										
 			</div> <!-- end of Bumpshare section -->					
@@ -114,7 +114,7 @@
 				</h2>
 				<div class="segment">
 					<p>(Coming Soon) Designed to provide a more intimate and meaningful experience, picChat does away with useless likes and comments. Focusing on sharing experiences, picChat allows personal, one-on-one conversation, as well as the ability to share where a certain picture was taken.</p>
-					<button class="ui button"><i class="android icon"></i>Download</button>
+					<button class="ui green button"><i class="android icon"></i>Download</button>
 				</div>
 			</div>
 		</div> <!-- end of picChat section -->					
@@ -175,30 +175,23 @@ Services</h3>
 	<!-- Contact section -->
 	<div class="contact info">
 		<div class="ui stacked raised segment">
-		  <div class="ui stackable centered grid container">
-		    <h2 class="ui section header">Contact Us</h2>
-				<p>We're a team of developers ready to help with any of your mobile or web development needs!</p>
-		    <div class="row">
-		      <div class="eight wide column">
-		        <div class="ui fluid input">
-		          <input type="text" placeholder="Name" id="name">
-		        </div>
-		        <div class="ui fluid input">
-		          <input type="text" placeholder="Email" id="email">
-		        </div>
-		        <button class="ui green fluid button" id="desktop_send">SEND</button>
+		  <h2 class="ui section centered header">Contact Us</h2>  
+		  <p>We're a team of developers ready to help with any of your mobile or web development needs!</p>
+		  <form class="ui form" action="mailto:richardxu100@gmail.com" method="post" enctype="text/plain">
+		    <div class="two fields">
+		      <div class="field">
+		        <input name="name" type="text" placeholder="Name" id="name"/>
 		      </div>
-		      <div class="eight wide column">
-		        <div class="form">
-		          <div class="field">
-		            <textarea placeholder="Message" rows="8" id="message"></textarea>
-		          </div>      
-		        </div>  
+		      <div class="field">
+		        <input name="email" type="text" placeholder="Email" id="email"/>
 		      </div>
-		      <button class="ui green fluid button" id="mobile_send">SEND</button>
 		    </div>
-		  </div>
-		</div> <!-- end of contact form -->
+		    <div class="fields">
+		      <textarea name="Message" placeholder="Message to Ople"></textarea>
+		    </div>
+		    <input type="submit" class="ui green fluid button" />
+		  </form>
+		</div>
 	</div> <!-- end of contact info -->
 
 	<!-- Awards Section -->
@@ -220,15 +213,16 @@ Services</h3>
 
 <!-- Footer Section-->
 	<footer>
-		<p>Developed by Ople &copy;</p>
+		<p>Developed by Ople &copy;<span>Contact E-mail: jasontu@ople.io</span></p>
+
 	</footer>
 
 <!-- Modal for Send Button-->
-<div class="ui modal">
+<!-- <div class="ui modal">
   <div class="header">Thank you for reaching out to us!</div>
   <div class="content">
     <p>We'll get back to you soon</p>
-</div>
+</div> -->
 
 	<!-- Jquery -->
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
