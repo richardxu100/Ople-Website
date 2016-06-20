@@ -66,4 +66,7 @@ $(document).ready(function() {
 });
 //Javascript
 
-
+function contactFormSubmit() {
+	document.getElementById("contactFormHead").innerHTML = "Form submitted!";
+	document.getElementById("contactFormText").innerHTML = "We will be in contact shortly."
+}

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
-	<title>Ople Website</title>
+	<title>ople</title>
 	<!-- Added Site Favicon -->
 	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 	<!-- Font Awesome -->
@@ -172,24 +172,31 @@ Services</h3>
 	</div>
 	</div>	<!--end of the info section-->			
 
+	<iframe style="visibility: hidden; display: none" name="formSending"></iframe>
+	
 	<!-- Contact section -->
 	<div class="contact info">
 		<div class="ui stacked raised segment">
-		  <h2 class="ui section centered header">Contact Us</h2>  
-		  <p>We're a team of developers ready to help with any of your mobile or web development needs!</p>
-		  <form class="ui form" action="mailto:contact@ople.io" method="post" enctype="text/plain">
-		    <div class="two fields">
-		      <div class="field">
-		        <input name="name" type="text" placeholder="Name" id="name"/>
-		      </div>
-		      <div class="field">
-		        <input name="email" type="text" placeholder="Email" id="email"/>
-		      </div>
-		    </div>
-		    <div class="fields">
-		      <textarea name="Message" placeholder="Message to Ople"></textarea>
-		    </div>
-		    <input type="submit" class="ui green fluid button" />
+		  <h2 class="ui section centered header" id="contactFormHead" >Contact Us</h2>  
+		  <p id="contactFormText" >We're a team of developers ready to help with any of your mobile or web development needs!</p>
+		  <form class="ui form" action="contact.php" target="formSending"  onsubmit="contactFormSubmit()" enctype="text/plain">
+			
+			<div id="form">
+					<div class="two fields">
+					  <div class="field">
+						<input name="name" type="text" placeholder="Name" id="name"/>
+					  </div>
+					  <div class="field">
+						<input name="email" type="text" placeholder="Email" id="email"/>
+					  </div>
+					</div>
+					<div class="fields">
+					  <textarea name="message" id="message" placeholder="Message"></textarea>
+					</div>
+					<input type="submit" class="ui green fluid button" />
+			</div>
+			
+		    
 		  </form>
 		</div>
 	</div> <!-- end of contact info -->
@@ -213,7 +220,7 @@ Services</h3>
 
 <!-- Footer Section-->
 	<footer>
-		<p>Developed by Ople &copy;<span>Contact E-mail: contact@ople.io</span></p>
+		<p>Developed by ople &copy;<span>contact@ople.io</span></p>
 
 	</footer>
 
@@ -229,5 +236,12 @@ Services</h3>
 	<!-- Semantic JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
 	<script src="js/myscript.js"></script>
+	<script>
+		function contactFormSubmit() {
+			document.getElementById("contactFormHead").innerHTML = "Form submitted!";
+			document.getElementById("contactFormText").innerHTML = "We will be in contact shortly."
+			document.getElementById("form").style.visibility="hidden";
+		}
+	</script>
 </body>
 </html>
