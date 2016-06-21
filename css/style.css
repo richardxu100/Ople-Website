@@ -12,7 +12,7 @@ body {
   transition: 600ms ease; }
 
 #header_image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/logo.svg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/NY2.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover; }
@@ -48,7 +48,7 @@ body {
 
 .info h2.ui.section.header {
   font-weight: 600;
-  margin-top: 1em; }
+  margin-top: 1.5em; }
 .info h2.ui.header {
   margin-top: 2em;
   font-size: 4em;
