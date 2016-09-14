@@ -34,13 +34,13 @@ $(document).ready(function() {
 		}, 700);
 	});
 	//Contact form variables
-	$('#send').click(function() {
-		var name, email, message;
-		name = $('#name').val();
-		email = $('#email').val();
-		message = $('#message').val();
-		$.post("../phpmail/mail.php", name, email, message);
-	});
+	// $('#send').click(function() {
+	// 	var name, email, message;
+	// 	name = $('#name').val();
+	// 	email = $('#email').val();
+	// 	message = $('#message').val();
+	// 	$.post("../phpmail/mail.php", name, email, message);
+	// });
 	//Navbar effects
 	$(window).scroll(function() {
 	  if ($(this).scrollTop() > 600) {
@@ -55,18 +55,17 @@ $(document).ready(function() {
 	$('.ui.green.fluid.button').click(function() {
 		$('.ui.modal').modal('setting', 'Fade', 300).modal('show');
 	});
-	//Media Queries
-	// $(window).resize(function(){     
- //   	if ($(window).width() == 320 ) {
- //   		$('#navbar').hide();
- //     }
-	// });
-
-
 });
 //Javascript
+
+// function contactFormSubmit() {
+// 	document.getElementById("contactFormHead").innerHTML = "Form submitted!";
+// 	document.getElementById("contactFormText").innerHTML = "We will be in contact shortly."
+// }
 
 function contactFormSubmit() {
 	document.getElementById("contactFormHead").innerHTML = "Form submitted!";
 	document.getElementById("contactFormText").innerHTML = "We will be in contact shortly."
+	document.getElementById("form").style.visibility="hidden";
 }
+

@@ -12,7 +12,7 @@ body {
   transition: 600ms ease; }
 
 #header_image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../public/logo.svg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../public/newYork.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover; }
@@ -48,7 +48,7 @@ body {
 
 .info h2.ui.section.header {
   font-weight: 600;
-  margin-top: 1em; }
+  margin-top: 1.5em; }
 .info h2.ui.header {
   margin-top: 2em;
   font-size: 4em;
@@ -71,10 +71,10 @@ p {
 .products.info {
   padding-bottom: 3em; }
 
-#bumpshare {
+#oneShare {
   margin-top: 5em; }
 
-#mobile_bumpshare {
+#mobile_oneShare {
   display: none; }
 
 .ui.centered.grid {
@@ -164,11 +164,11 @@ footer {
   #navbar div.right.menu {
     display: none; }
 
-  #mobile_bumpshare {
+  #mobile_oneShare {
     display: inline-block;
     margin-top: -20px; }
 
-  #desktop_bumpshare {
+  #desktop_oneShare {
     display: none; }
 
   #mobile_send {
