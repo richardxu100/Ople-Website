@@ -1,3 +1,2 @@
 # Ople-Website
-The website for Ople.tech
-The Ople Website!
+The website for ople.io
